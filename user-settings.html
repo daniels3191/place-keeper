@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user-settings.css">
+    <title>User Settings</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Settings</h1>
+        <section class="links-container">
+            <section class="logo"> logo</section>
+            <nav class="links">
+                <a href="places.html">Places</a>
+                <a href="index.html">Main</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <form id="frm" onsubmit="onFormSubmit(event)">
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" autocomplete="off" required> </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td>
+                        <input type="range" id="sAge" name="age" step="1" min="18" max="120" value="32"
+                            oninput="showAge(this.value)" />
+                        <span id="age">26</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="color">Set Text Color:</label></td>
+                    <td> <input value="#0000ff" type="color" id="txt-color" name="text-color" /></td>
+                </tr>
+                <td><label for="background-color">Set Background Color:</label></td>
+                <td> <input value="#a8a8bd" type="color" id="background-color" name="background-color" /></td>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" value="1992-03-28" id="dob" name="dob" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="birth-time">Birth Time:</label></td>
+                    <td><input type="time" id="birth-time" name="birth-time"></td>
+                </tr>
+
+
+
+            </table>
+            <button>submit</button>
+
+        </form>
+    </main>
+
+</body>
+<script src="js/services/storage.service.js"></script>
+<script src="js/controller/userController.js"></script>
+<script src="js/services/userServices.js"></script>
+
+
+</html>

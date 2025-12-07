@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+
+
+
+header{
+    /* position: fixed;
+    inset: 0 0 auto 0; */
+    padding: 5px 15px;
+    background-color: rgb(182, 197, 202);
+}
+
+.links-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* flex-grow: 2; */
+}
+.logo {
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: bold;
+    flex-grow: 15;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
