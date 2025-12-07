@@ -30,3 +30,26 @@ header .secound-title{
     gap: 10px;
     /* flex-grow: 2; */
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.map{
+    flex-grow: 3;
+}
+
+aside{
+    flex-grow: 2;
+}
+
+.places .title{
+display: flex;
+direction: column;
+}
+
+gmp-map {
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+}
