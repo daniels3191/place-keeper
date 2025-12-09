@@ -30,14 +30,14 @@ function _createPlaces() {
     if (!gPlaces || gPlaces.length == 0) {
         
         gPlaces = [
-            _createPlace('Pukis house', 32.1416, 34.831213),
-            _createPlace('lorem house', 31.1416, 30.831213)
+            _createPlace('Egypt', 27.09336363811584, 29.871826171875, 5),
+            _createPlace('Turkite', 38.989302551359515, 35.4364013671875, 3)
         ]
     }
     _savePlaces()
 }
 
-function _createPlace(name, lat, lng, zoom = 1) {
+function _createPlace(name, lat, lng, zoom = 5) {
       return {
         id: makeId(),
         name,
@@ -56,4 +56,7 @@ function getPlaces(){
     return structuredClone(gPlaces)
 
 }
+
+
+
 
